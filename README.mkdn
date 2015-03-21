@@ -1,8 +1,7 @@
-Team Vanir's repo
+ICE repo
 ===========
 
-This branch is for Vanir's L5 branch, our android-5.0.0 based ROM
-
+Based on Vanir, all props to them
 
 Getting Started
 ---------------
@@ -11,16 +10,17 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u git://github.com/VanirAOSP/platform_manifest.git -b L5
+    repo init -u git://github.com/ench0/platform_manifest.git -b L5
 
-Mac Users: initialize your local repository using:
 
-    repo init -u git://github.com/VanirAOSP/platform_manifest.git -b L5 -g darwin
 
 Then to sync up:
 
-    repo sync -j8
+    repo sync -j4
     
+
+VANIR STUFF:
+
 Our gerrit:
 
 	http://gerrit.vanir.co:8080/#/q/status:open
