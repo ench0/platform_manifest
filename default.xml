@@ -5,6 +5,10 @@
           fetch="https://github.com/VanirAOSP/"
           review="gerrit.vanir.co:8080"
           revision="L5" />
+  <remote name="ench0"
+          fetch="https://github.com/ench0/"
+          review="gerrit.vanir.co:8080"
+          revision="L5" />
   <remote name="commotio"
           fetch="https://github.com/DHOMD/"
           review="gerrit.vanir.co:8080" />
@@ -29,7 +33,7 @@
           sync-j="12"
           remote="cm" />
 
-  <project path="manifest" name="platform_manifest" remote="vanir" /> <!-- DO NOT MOVE - whine to Nuclearmistake -->
+  <project path="manifest" name="platform_manifest" remote="ench0" />
   <project path="build" name="build" remote="vanir" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
