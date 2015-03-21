@@ -7,28 +7,18 @@
           revision="L5" />
   <remote name="ench0"
           fetch="https://github.com/ench0/"
-          review="gerrit.vanir.co:8080"
           revision="L5" />
-  <remote name="commotio"
-          fetch="https://github.com/DHOMD/"
-          review="gerrit.vanir.co:8080" />
   <remote name="aosp"
           fetch="https://android.googlesource.com/"
           review="https://android-review.googlesource.com/"
           revision="refs/tags/android-5.0.2_r1" />
-  <remote name="bitbucket"
-          fetch="https://bitbucket.org/" />
   <remote name="cm"
           fetch="https://github.com/CyanogenMod"
           review="review.cyanogenmod.com" />
   <remote name="github"
           fetch="https://github.com/" />
-  <remote name="omni"
-          fetch="https://github.com/omnirom/" />
-  <remote name="linaro"
-          fetch="http://android.git.linaro.org/git-ro/" />
   <remote name="samba"
-          fetch="git://git.samba.org/" />
+          fetch="https://git.samba.org/" />
   <default revision="cm-12.0"
           sync-j="4"
           remote="cm" />
@@ -38,7 +28,6 @@
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
   </project>
-
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
   <project path="art" name="art"  groups="aospL5" remote="vanir" />
   <project path="bionic" name="bionic" remote="vanir" groups="pdk" />
@@ -49,7 +38,7 @@
   <project path="cts" name="android_cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="dalvik" remote="vanir" />
   <project path="development" name="android_development" />
- <project path="device/common" name="android_device_common" groups="pdk" />
+  <project path="device/common" name="android_device_common" groups="pdk" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="android_device_generic_common" groups="pdk" />
@@ -66,8 +55,6 @@
   <project path="device/samsung/hltetmo" name="android_device_samsung_hltetmo" groups="hlte_device" />
   <project path="device/samsung/msm8974-common" name="device_samsung_msm8974-common" remote="vanir" groups="device" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="vanir" groups="device" />
-  <project path="device/samsung/smdk4412-common" name="device_samsung_smdk4412-common" groups="device" remote="vanir" />
-  <project path="device/samsung/smdk4412-qcom-common" name="device_samsung_smdk4412-qcom-common" remote="vanir" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" remote="aosp" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" remote="aosp" />
@@ -389,7 +376,7 @@
   <project path="hardware/invensense" name="hardware_invensense" remote="vanir" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="vanir" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware-legacy" remote="vanir" groups="pdk" />
- <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="vanir" revision="L5-caf-8974" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="vanir" revision="L5-caf-8974" />
   <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="vanir" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" groups="qcom,qcom_display" remote="vanir" />
@@ -397,14 +384,21 @@
   <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" groups="qcom" remote="vanir" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" />
- <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" groups="qcom" remote="vanir" revision="L5-caf-8974" />
+  <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" groups="qcom" remote="vanir" revision="L5-caf-8974" />
   <project path="hardware/qcom/media/default" name="hardware_qcom_media" groups="qcom" remote="vanir" />
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" remote="aosp" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" />
   <project path="hardware/ril" name="hardware_ril" remote="vanir" groups="pdk" />
   <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" revision="cm-12.0-caf" />
   <project path="hardware/samsung" name="hardware_samsung" remote="vanir" />
-  <project path="hardware/samsung_slsi/exynos5" name="hardware_samsung_slsi_exynos5" remote="vanir" />
+  <project path="hardware/sony/thermanager" name="android_hardware_sony_thermanager" />
+  <project path="hardware/sony/DASH" name="android_hardware_sony_DASH" />
+  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" remote="aosp" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" />
+  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" />
+  <project path="hardware/ti/omap4xxx" name="hardware_ti_omap4xxx" remote="vanir" />
+  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" />
   <project path="libcore" name="libcore" remote="vanir" />
   <project path="libnativehelper" name="android_libnativehelper" />
   <project path="ndk" name="platform/ndk" remote="aosp" />
@@ -449,7 +443,7 @@
   <project path="packages/apps/ThemeChooser" name="packages_apps_ThemeChooser" remote="vanir" />
   <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="vanir" />
- <project path="packages/apps/VanirUpdater" name="packages_apps_VanirUpdater" remote="vanir" />
+<project path="packages/apps/VanirUpdater" name="packages_apps_VanirUpdater" remote="vanir" />
   <project path="packages/apps/VoiceDialer" name="android_packages_apps_VoiceDialer" />
   <project path="packages/inputmethods/LatinIME" name="packages_input_LatinIME" remote="vanir" />
   <project path="packages/providers/ApplicationsProvider" name="android_packages_providers_ApplicationsProvider" />
@@ -469,7 +463,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="vanir" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="aospL5" remote="vanir" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="aosp" />
-<project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" remote="aosp" />
+  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" remote="aosp" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" remote="aosp" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" remote="aosp" />
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" />
@@ -531,18 +525,12 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" remote="github" />
   <project path="vendor/extra" name="vendor_qcom_opt" remote="vanir" />
-  <project path="vendor/samsung" name="vendor_samsung" remote="vanir" groups="vendor" />
   <project path="vendor/ice" name="vendor_ice" remote="ench0" groups="vendor" />
 
 <!-- Additional vendors -->
   <project path="vendor/audience" name="TheMuppets/proprietary_vendor_audience" remote="github" revision="cm-12.0" />
   <project path="vendor/broadcom" name="TheMuppets/proprietary_vendor_broadcom" remote="github" revision="cm-12.0" />
   <project path="vendor/invensense" name="TheMuppets/proprietary_vendor_invensense" remote="github" revision="cm-12.0" />
-  <project path="vendor/nvidia" name="TheMuppets/proprietary_vendor_nvidia" remote="github" revision="cm-12.0" />
   <project path="vendor/nxp" name="TheMuppets/proprietary_vendor_nxp" remote="github" revision="cm-12.0" />
   <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="github" revision="cm-12.0" />
-
-  <project path="kernel/samsung/hlte" name="android_kernel_samsung_hlte" groups="hlte_device" />
-  <!--<project name="arter97/android_kernel_samsung_msm8974" path="kernel/samsung/hlte" remote="github" revision="n9005" />-->
-
 </manifest>
