@@ -30,7 +30,7 @@
   <remote name="samba"
           fetch="git://git.samba.org/" />
   <default revision="cm-12.0"
-          sync-j="12"
+          sync-j="2"
           remote="cm" />
 
   <project path="manifest" name="platform_manifest" remote="ench0" />
