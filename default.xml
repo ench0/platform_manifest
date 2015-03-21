@@ -30,7 +30,7 @@
   <remote name="samba"
           fetch="git://git.samba.org/" />
   <default revision="cm-12.0"
-          sync-j="2"
+          sync-j="4"
           remote="cm" />
 
   <project path="manifest" name="platform_manifest" remote="ench0" />
@@ -532,7 +532,7 @@
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" remote="github" />
   <project path="vendor/extra" name="vendor_qcom_opt" remote="vanir" />
   <project path="vendor/samsung" name="vendor_samsung" remote="vanir" groups="vendor" />
-  <project path="vendor/vanir" name="vendor_vanir" remote="vanir" groups="vendor" />
+  <project path="vendor/ice" name="vendor_ice" remote="ench0" groups="vendor" />
 
 <!-- Additional vendors -->
   <project path="vendor/audience" name="TheMuppets/proprietary_vendor_audience" remote="github" revision="cm-12.0" />
@@ -542,7 +542,7 @@
   <project path="vendor/nxp" name="TheMuppets/proprietary_vendor_nxp" remote="github" revision="cm-12.0" />
   <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="github" revision="cm-12.0" />
 
-  <!--<project path="kernel/samsung/hlte" name="android_kernel_samsung_hlte" groups="hlte_device" />-->
+  <project path="kernel/samsung/hlte" name="android_kernel_samsung_hlte" groups="hlte_device" />
   <!--<project name="arter97/android_kernel_samsung_msm8974" path="kernel/samsung/hlte" remote="github" revision="n9005" />-->
 
 </manifest>
