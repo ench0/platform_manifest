@@ -24,7 +24,7 @@
           remote="cm" />
 
   <project path="manifest" name="platform_manifest" remote="ench0" />
-  <project path="build" name="build" remote="vanir" groups="pdk">
+  <project path="build" name="moonlight_build" remote="ench0" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
   </project>
